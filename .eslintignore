@@ -1,0 +1,7 @@
+dist
+package-lock.json
+public
+node_modules
+vite-env.d.ts
+vite.config.ts
+yarn.lock
