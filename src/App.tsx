@@ -1,7 +1,17 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import ClientRoutes from '@/routes/ClientRoutes';
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/*" element={<ClientRoutes />} />
+          {/* <Route path="/admin/*" element={<ClientRoutes />} /> */}
+        </Routes>
+      </Router>
+    </>
+  );
 }
-
 export default App;
