@@ -1,15 +1,11 @@
-import React from 'react';
 import Header from './Header';
+import { Outlet } from 'react-router';
 
-type LayoutWrapperProps = {
-  children: React.ReactNode;
-};
-
-const LayoutWrapper = ({ children }: LayoutWrapperProps) => {
+const LayoutWrapper = () => {
   return (
     <>
       <Header />
-      {children}
+      <Outlet />
     </>
   );
 };
